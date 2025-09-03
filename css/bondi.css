@@ -1,0 +1,197 @@
+:root{
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+}
+.main-btn{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.main-btn:hover{
+    color: var(--yellow-color);
+}
+.main-btn:focus{
+    box-shadow: none;
+}
+.main-heading{
+    position: relative;
+    margin-bottom:80px;
+}
+.main-heading img{
+    margin-bottom: 30px;
+}
+.main-heading::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* Start Navbar  */
+.navbar{
+    background-color: var(--dark-color);
+}
+.nav-link{
+    color: white;
+}
+.nav-link.active ,
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--green-color);
+}
+.navbar .search{
+    border-left: 1px solid var(--green-color);
+    cursor: pointer;
+}
+.navbar .search path{
+    color: var(--green-color);
+}
+.navbar-toggler{
+    color: white;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+} 
+/* End Navbar  */
+/* Start creative */
+.creative{
+    height: calc(100vh - 72px);
+    background-color: var(--dark-color);
+}
+/* End creative */
+/* Start Features  */
+.features .icon-holder{
+    height:200px;
+}
+.features .icon-holder .number{
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.features .icon-holder .media{
+    color: var(--green-color);
+    bottom:20px   
+}
+.features h4{
+    color: var(--yellow-color);
+}
+/* End Features  */
+/* Start Work  */
+.work {
+    background-color:var(--section-color);
+}
+.work .box{
+    padding: 5px;
+    overflow: hidden;
+}
+.work .box::before{
+    content: "application";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: rgb(51 209 204 / 76%);
+    transform: translatex(calc(-100% - 5px));
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s
+}
+.work .box:hover::before{
+    transform: translatex(0);
+}
+.work ul li a{
+    padding: 0.5rem 1rem;
+}
+.work ul li .active{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.work ul li a:hover:not(.active){
+    color:var(--red-color);
+}
+/* End Work  */
+/* Start Stuff */
+.our-stuff .discription{
+    max-width: 550px;
+    margin: auto;
+}
+/* End Stuff */
+/* Start Team  */
+.team{
+    background-color: var(--section-color);
+}
+.team h2{
+    color: var(--yellow-color);
+}
+.team .card span{
+    background-color: var(--green-color);
+}
+/* End Team  */
+/* Start Project */
+.project{
+    background-color: var(--dark-color);
+}
+/* End Project */
+/* Start Subscribe */
+.subscribe{
+    background-color: var(--yellow-color);
+}
+.subscribe input[type="text"]{
+    border: none;
+    border-bottom: 1px solid white;
+    caret-color: var(--dark-color);
+}
+.subscribe input[type="text"]:focus{
+    outline: none;
+}
+.subscribe input[type="text"]::placeholder{
+    color:white;
+}
+.subscribe input[type="submit"]{
+    border: none;
+    background-color: var(--dark-color);
+}
+/* End Subscribe */
+/* Start Footer  */
+.footer{
+    background-color: var(--dark-color);
+}
+.footer span{
+    color: var(--yellow-color);
+}
+.footer ul li{
+    cursor: pointer;
+}
+.footer a{
+    color: white
+}
+.footer .media svg{
+    width: 20px;
+    height: 20px;
+}
+.footer .facebook{
+    color: #1877f2;
+}
+.footer .twitter{
+    color: #1da1f2;
+}
+.footer .google{
+    color: #dd4b39;
+}
+.footer .youtube{
+    color: #ff0000;
+}
+/* End Footer  */
